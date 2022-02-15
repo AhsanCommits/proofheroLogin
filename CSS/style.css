@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* ===========================
+        Upperbar
+   ===========================*/
+#upperbar {
+  border-bottom: 3px solid #e4e5e5;
+}
+.display {
+  justify-content: flex-end;
+  margin-right: 3.5rem;
+}
+
+.dropdown-item:active {
+  background-color: #db363c;
+}
+
+/* ===========================
+        Sidebar
+   ===========================*/
+#sidebar {
+  width: 6%;
+  float: left;
+  background: #ffffff;
+  height: 100vh;
+}
+
+#sidebar ul {
+  margin-top: 2rem;
+  list-style: none;
+  border-right: 3px solid #db363c;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #a4a4a4;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sidebar ul li a:focus,
+#sidebar ul li a:active {
+  color: #db363c !important;
+}
+
+.text {
+  display: none;
+}
+/* ===========================
+        Content
+   ===========================*/
+#content {
+  background: #f0f2f5;
+  width: 94%;
+  float: right;
+  min-height: 100vh;
+  /* font-size: 50px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.alert-primary {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background: #cbdfed;
+  color: #a4a4a4;
+  border-radius: 10px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  color: #a4a4a4;
+}
+
+.Container .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info {
+  background: #c0e6d2;
+  color: #588d70;
+  padding: 2px 6px;
+  border-radius: 0.2rem;
+}
+
+.Info {
+  background: #c0e6d2;
+  color: #588d70;
+  padding: 2px 6px;
+  margin: 0px 8px;
+  border-radius: 0.2rem;
+}
+
+#campaign-section .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  border: none;
+}
+.table-responsive {
+  border: 2px solid #a4a4a4;
+  border-radius: 10px;
+}
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.form-check-input:focus,
+.form-check-input:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-check .form-check-input:checked {
+  background-color: #db3037 !important;
+  border-color: #db3037;
+}
+.form-check .form-check-input:checked:focus {
+  border-color: #db3037;
+  color: #db3037 !important;
+}
+.form-check .form-check-input:focus {
+  border-color: #c7c7c7;
+  color: #db3037 !important;
+}
+@media (max-width: 480px) {
+  .Container .row1 div button {
+    margin-top: 6px;
+  }
+  .Info {
+    margin: 0px 1px;
+  }
+  #content,
+  .card {
+    padding: 10px !important;
+  }
+}
